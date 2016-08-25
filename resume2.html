@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Resume
+	</title>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Philosopher" rel="stylesheet">
+	<style>
+	@media screen and (min-width: 800px){
+	body{
+		-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	letter-spacing: .5px;
+	color: rgba(0,0,0,.8);
+	font-size: 14px;
+	}
+		main{
+			background-color: ghostwhite;
+			box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+0px 8px 13px rgba(0, 0, 0, 0.1),
+0px 18px 23px rgba(0, 0, 0, 0.1);
+			width: 750px;
+			height: 1000px;
+			margin: 10px auto;
+			max-width: 1000px;
+			
+			
+		}
+		h1{
+			font-size: 34px;
+			letter-spacing: 1.2px;
+			margin-left: 32px;
+			color: rgba(0,0,0,1);
+		}
+		h2{
+			font-size: 20px;
+			margin-bottom: 33px;
+			margin-left: 37px;
+			color: rgba(0,0,0,.7);
+		}
+		svg{
+			width: 100%;
+			height: 20%;
+			z-index:-1;
+			margin-top: 23px;
+		}
+		img{
+		
+	width: 115px;
+	/*border: 6px solid ghostwhite;*/
+	height: auto;
+	border-radius: 50%;
+	position: relative;
+	top: 4px;
+
+}
+p{
+	width: 44%;
+	text-indent: 33px;
+	line-height: 1.5;
+	margin-top: 15px;
+}
+.profile{
+	position: absolute;
+	top:235px;
+	text-align: center;
+	margin-left: 68px;
+	max-width: 750px;
+}
+table{
+	width:100%;
+}
+i{
+	color:rgba(104, 151, 230,1);
+	padding-right: 7px;
+	font-size: 16px;
+}
+th{
+	font-size:12px;
+	font-style:none;
+	font-weight: lighter;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px; 
+
+}
+.details{
+	line-height: 2;
+	float:right;
+	padding-right:30px;
+	font-size: 12px;
+}
+.name{
+	float:left;
+	margin-top: -17px;
+}
+.header{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.panel-heading{
+
+}
+.circle{
+	position: absolute;
+	text-align: center;
+	background-color: rgba(253, 19, 125,.8);
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	font-size: 16px;
+}
+.panel-body{
+	min-height: 219px;
+}
+
+.panel{
+	background-color: ghostwhite;
+	border: 0px solid #000;
+	box-shadow: none;
+	margin-left: 15px; 
+	margin-right:15px;
+	text-align: left;
+}
+.panel-default > .panel-heading{
+	background-color: ghostwhite;
+	border: 0px solid #000 0px solid #000 1px solid #000 0px solid #000; 
+	padding-top: 0;
+}
+.small{
+	font-size: 12px;
+	color: rgba(0,0,0,.5);
+}
+.html{
+	top:65px;
+	left:103px;
+	width: 70px;
+	height: 70px;
+	padding-top: 26px;
+
+}
+.css{
+	top:84px;
+	left:67px;
+	padding-top: 39px;
+	padding-left: 35px;
+}
+.javascript{
+	top:94px;
+	left:131px;
+	padding-top: 38px;
+	padding-left: 19px;
+}
+.sass{
+	top:86px;
+	left:45px;
+	width: 60px;
+	height: 60px;
+	padding-top: 19px;
+}
+.bootstrap{
+	top:123px;
+	left:109px;
+	width: 90px;
+	height: 90px;
+	padding-top: 34px;
+}
+.angular{
+	top:81px;
+	right:146px;
+	width: 80px;
+	height: 80px;
+	padding-top: 24px;
+}
+.jquery{
+	top:128px;
+	left:190px;
+	width:72px;
+	height:72px;
+	padding-top: 25px;
+}
+label{
+	position: absolute;
+	z-index: 1;
+	color: ghostwhite;
+	text-align: center;
+	font-weight: lighter;
+	font-size: 14px;
+}
+th, span{
+	font-size: 14px;
+}
+.front-end{
+	
+}
+.other{	
+	width: 50px;
+	height: 50px;
+	font-size: 14px;
+}
+.java{
+	position: absolute;
+	border-radius: 50%;
+	top: 62px;
+	right: 60px;
+	background-color: rgba(156, 172, 200,1);
+	width: 50px;
+	height: 50px;
+	padding-top: 14px;
+}
+.assembly{
+	position: absolute;
+	border-radius: 50%;
+	right: 60px;
+	top: 173px;
+	background-color: rgba(156, 172, 200,.8);
+	width: 50px;
+	height: 50px;
+	padding-top: 14px;
+}
+.c{
+	position: absolute;
+	border-radius: 50%;
+	right: 60px;
+	top: 118px;
+	background-color: rgba(156, 172, 200,.8);
+	width: 50px;
+	height: 50px;
+	padding-top: 14px;
+
+}
+.reference{
+	text-align: left;
+}
+}
+
+@media print {
+		body{
+		-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	letter-spacing: .5px;
+	color: rgba(0,0,0,.8);
+	font-size: 14px;
+	margin: 0;
+	}
+		main{
+			background-color: ghostwhite;
+			box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+0px 8px 13px rgba(0, 0, 0, 0.1),
+0px 18px 23px rgba(0, 0, 0, 0.1);
+			width: 750px;
+			height: 1000px;
+			margin: 10px auto;
+			
+			
+		}
+		h1{
+			font-size: 34px;
+			letter-spacing: 1.2px;
+			margin-left: 32px;
+			color: rgba(0,0,0,1);
+		}
+		h2{
+			font-size: 20px;
+			margin-bottom: 33px;
+			margin-left: 37px;
+			color: rgba(0,0,0,.7);
+		}
+		svg{
+			width: 100%;
+			height: 20%;
+			z-index:-1;
+			margin-top: 23px;
+		}
+		img{
+		
+	width: 115px;
+	border: 6px solid ghostwhite;
+	height: auto;
+	border-radius: 50%;
+	position: relative;
+	top: 108px;
+	visibility: hidden;
+
+}
+p{
+	width: 95%;
+	text-indent: 33px;
+	line-height: 1.5;
+	margin-top: 15px;
+}
+.profile{
+	position: absolute;
+	top:235px;
+	text-align: center;
+	margin-left: 68px;
+}
+table{
+	width:100%;
+}
+i{
+	color:rgba(104, 151, 230,1);
+	padding-right: 7px;
+	font-size: 16px;
+}
+th{
+	font-size:12px;
+	font-style:none;
+	font-weight: lighter;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px; 
+
+}
+.details{
+	line-height: 2;
+	float:right;
+	padding-right:30px;
+	font-size: 12px;
+}
+.name{
+	float:left;
+	margin-top: -17px;
+}
+.header{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.panel-heading{
+
+}
+.circle{
+	text-align: left;
+	width:100%;
+}
+.panel-body{
+	min-height: 219px;
+}
+
+.panel{
+	background-color: ghostwhite;
+	border: 0px solid #000;
+	box-shadow: none;
+	margin-left: 15px; 
+	margin-right:15px;
+	text-align: left;
+}
+.panel-default > .panel-heading{
+	background-color: ghostwhite;
+	border: 0px solid #000 0px solid #000 1px solid #000 0px solid #000; 
+	padding-top: 0;
+}
+.small{
+	font-size: 12px;
+	color: rgba(0,0,0,.5);
+}
+.html{
+	
+
+}
+.css{
+	
+}
+.javascript{
+	
+}
+.sass{
+	
+}
+.bootstrap{
+	
+}
+.angular{
+	
+}
+.jquery{
+	
+}
+label{
+	z-index: 1;
+	color: ghostwhite;
+	text-align: center;
+	font-weight: lighter;
+	font-size: 14px;
+}
+th, span{
+	font-size: 14px;
+}
+.front-end{
+	
+}
+.other{	
+	width: 50px;
+	height: 50px;
+	font-size: 14px;
+}
+.java{
+	position: absolute;
+	border-radius: 50%;
+	top: 62px;
+	right: 60px;
+	background-color: rgba(156, 172, 200,1);
+	width: 50px;
+	height: 50px;
+	padding-top: 14px;
+}
+.assembly{
+	position: absolute;
+	border-radius: 50%;
+	right: 60px;
+	top: 173px;
+	background-color: rgba(156, 172, 200,.8);
+	width: 50px;
+	height: 50px;
+	padding-top: 14px;
+}
+.c{
+	position: absolute;
+	border-radius: 50%;
+	right: 60px;
+	top: 118px;
+	background-color: rgba(156, 172, 200,.8);
+	width: 50px;
+	height: 50px;
+	padding-top: 14px;
+
+}
+.reference{
+	text-align: left;
+}
+}
+@media screen and (min-width: 480px) {
+		body{
+		-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+	letter-spacing: .5px;
+	color: rgba(0,0,0,.8);
+	font-size: 14px;
+	}
+		main{
+			background-color: ghostwhite;
+			box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+0px 8px 13px rgba(0, 0, 0, 0.1),
+0px 18px 23px rgba(0, 0, 0, 0.1);
+			width: 750px;
+			height: 1000px;
+			margin: 10px auto;
+			
+			
+		}
+		h1{
+			font-size: 34px;
+			letter-spacing: 1.2px;
+			margin-left: 32px;
+			color: rgba(0,0,0,1);
+		}
+		h2{
+			font-size: 20px;
+			margin-bottom: 33px;
+			margin-left: 37px;
+			color: rgba(0,0,0,.7);
+		}
+		svg{
+			width: 100%;
+			height: 20%;
+			z-index:-1;
+			margin-top: 23px;
+		}
+		img{
+		
+	width: 115px;
+	height: auto;
+	border-radius: 50%;
+	position: relative;
+	top: 4px;
+
+}
+p{
+	width: 66%;
+	text-indent: 33px;
+	line-height: 1.5;
+	margin-top: 15px;
+
+}
+.profile{
+	position: absolute;
+	top:220px;
+	text-align: center;
+	margin-left: 68px;
+}
+table{
+	width:100%;
+}
+i{
+	color:rgba(104, 151, 230,1);
+	padding-right: 7px;
+	font-size: 16px;
+}
+th{
+	font-size:12px;
+	font-style:none;
+	font-weight: lighter;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px; 
+
+}
+.details{
+	line-height: 2;
+	float:right;
+	padding-right:30px;
+	font-size: 12px;
+}
+.name{
+	float:left;
+	margin-top: -17px;
+}
+.header{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.panel-heading{
+
+}
+.circle{
+	position: absolute;
+	text-align: center;
+	background-color: rgba(253, 19, 125,.8);
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	font-size: 16px;
+}
+.panel-body{
+	min-height: 219px;
+}
+
+.panel{
+	background-color: ghostwhite;
+	border: 0px solid #000;
+	box-shadow: none;
+	margin-left: 15px; 
+	margin-right:15px;
+	text-align: left;
+}
+.panel-default > .panel-heading{
+	background-color: ghostwhite;
+	border: 0px solid #000 0px solid #000 1px solid #000 0px solid #000; 
+	padding-top: 0;
+}
+.small{
+	font-size: 12px;
+	color: rgba(0,0,0,.5);
+}
+.html{
+	top:65px;
+	left:103px;
+	width: 70px;
+	height: 70px;
+	padding-top: 26px;
+
+}
+.css{
+	top:84px;
+	left:67px;
+	padding-top: 39px;
+	padding-left: 35px;
+}
+.javascript{
+	top:94px;
+	left:131px;
+	padding-top: 38px;
+	padding-left: 19px;
+}
+.sass{
+	top:86px;
+	left:45px;
+	width: 60px;
+	height: 60px;
+	padding-top: 19px;
+}
+.bootstrap{
+	top:123px;
+	left:109px;
+	width: 90px;
+	height: 90px;
+	padding-top: 34px;
+}
+.angular{
+	top:81px;
+	right:146px;
+	width: 80px;
+	height: 80px;
+	padding-top: 24px;
+}
+.jquery{
+	top:128px;
+	left:190px;
+	width:72px;
+	height:72px;
+	padding-top: 25px;
+}
+label{
+	position: absolute;
+	z-index: 1;
+	color: ghostwhite;
+	text-align: center;
+	font-weight: lighter;
+	font-size: 14px;
+}
+th, span{
+	font-size: 14px;
+}
+.front-end{
+	
+}
+.other{	
+	width: 50px;
+	height: 50px;
+	font-size: 14px;
+}
+.java{
+	position: absolute;
+	border-radius: 50%;
+	top: 62px;
+	right: 60px;
+	background-color: rgba(156, 172, 200,1);
+	width: 50px;
+	height: 50px;
+	padding-top: 14px;
+}
+.assembly{
+	position: absolute;
+	border-radius: 50%;
+	right: 60px;
+	top: 173px;
+	background-color: rgba(156, 172, 200,.8);
+	width: 50px;
+	height: 50px;
+	padding-top: 14px;
+}
+.c{
+	position: absolute;
+	border-radius: 50%;
+	right: 60px;
+	top: 118px;
+	background-color: rgba(156, 172, 200,.8);
+	width: 50px;
+	height: 50px;
+	padding-top: 14px;
+
+}
+.reference{
+	text-align: left;
+}
+}
+</style>
+
+
+</head>
+<body class="container-fluid"> 
+<main class="">
+	
+<div class="header row">
+<div class="name col-lg-6 col-md-6 col-xs-6">
+	<h1>FABRIENNE WICKER</h1>
+	<h2>Junior Front End Developer</h2>
+</div>	
+<div class="details col-lg-4 col-md-4 col-xs-4">
+	<i class="fa fa-envelope" aria-hidden="true" style="font-size:13px;"></i><span>  fabriennewicker@gmail.com   </span><br>
+	<i class="fa fa-mobile" aria-hidden="true" style="font-size:20px;"></i><span>   (919)961-7703         </span><br>
+	<i class="fa fa-codepen" aria-hidden="true" style="font-size:13px;"></i><span>http://codepen.io/fgwicker/</span><br>
+	<i class="fa fa-globe" aria-hidden="true" style="font-size:14px;"></i><span>Raleigh NC</span>
+
+</div>
+</div>
+<svg style="width:100%;">
+<filter id="dropshadow" height="130%">
+  <feGaussianBlur in="SourceAlpha" stdDeviation="3"/> <!-- stdDeviation is how much to blur -->
+  <feOffset dx="2" dy="2" result="offsetblur"/> <!-- how much to offset -->
+  <feMerge> 
+    <feMergeNode/> <!-- this contains the offset blurred image -->
+    <feMergeNode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+  </feMerge>
+</filter>
+	<polygon points="0,80 50,0 750,0 750,160 50,160" fill="rgba(156, 172, 200,.2)"/>
+
+</svg>
+<div class="profile row">
+<p class="col-lg-8 col-md-8 col-xs-8">After teaching myself coding with the help of online resources while being a full-time mother, I now feel ready to reenter the workforce. I am confident that my persistence and hard work could make a positive influence in your company.</p>
+<img class="img-circle col-lg-2 col-md-2 col-xs-2" src="IMG_6042.jpg">
+		
+		
+</div>
+<div class="row">
+	<div class="col-md-6 col-xs-6">
+		<div class="panel panel-default">
+			<div class="panel-heading"><i class="fa fa-graduation-cap" aria-hidden="true"></i>EDUCATION</div>
+			<div class="panel-body">
+				<table>
+					<tr>
+						<th class="small">2015 - Present</th><th><span>Front End Developer Certificate</span><br><span class="small">Free Code Camp</span></th>
+					</tr>
+										<tr>
+						<th class="small">2013 - 2015</th><th><span>Android Developer Certificate</span><br><span class="small">Wake Technical Community College</span></th>
+					</tr>
+										<tr>
+						<th class="small">2008</th><th><span>Licensed Electronics Engineer</span><br><span class="small">Philippine Regulations Commission</span></th>
+					</tr>
+					</tr>
+										<tr>
+						<th class="small">2002 - 2007</th><th><span>BS in Electronics Engineering</span><br><span class="small">University of Southeastern Philippines</span></th>
+					</tr>
+				</table>
+				
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading"><i class="fa fa-briefcase" aria-hidden="true"></i>WORK EXPERIENCE</div>
+			<div class="panel-body">
+				<table>
+					<tr>
+						<th class="small">2009-2010</th><th><span>Engineering Instructor</span><br><span class="small">Holy Cross of Davao College, Inc.</span></th>
+					</tr>
+					<tr>
+						<th class="small">2007-2009</th><th><span>Information Systems Engineer</span><br><span class="small">Provincial Government of Davao Oriental, Philippines</span></th>
+					</tr>
+				</table>
+			</div>
+			</div>
+		</div>
+		 <div class="col-md-6 col-xs-6">
+		<div class="panel panel-default">
+			<div class="panel-heading"><i class="fa fa-code" aria-hidden="true"></i>SKILLS</div>
+			<div class="panel-body">
+				<div class="front-end">
+				<div class="html circle"></div>
+				<label class="html">HTML 5</label>
+				<div class="css circle"></div>
+				<label class="css">CSS3</label>
+				<div class="javascript circle"></div>
+				<label class="javascript">Javascript</label>
+				<div class="jquery circle"></div>
+				<label class="jquery">JQuery</label>
+				<div class="sass circle"></div>
+				<label class="sass">Sass</label>
+				<div class="bootstrap circle"></div>
+				<label class="bootstrap">Bootstrap</label>
+				<div class="angular circle"></div>
+				<label class="angular">Angular.Js</label>
+				</div>
+				<div class="other">
+					<div class="java"></div>
+					<label class="java">Java</label>
+					<div class="c"></div>
+					<label class="c">C/C++</label>
+					<div class="assembly"></div>
+					<label class="assembly">x86</label>
+				</div>
+			</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading"><i class="fa fa-users" aria-hidden="true"></i>REFERENCE</div>
+				<div class="panel-body">
+					<table >
+						<tr>
+							<th class="reference">Geetah D. Shah <br><span class="small">WTCC Professor</span></th>
+							<th class="reference">gdshah@waketech.edu<br><span>(919) 532-5558</span></th>
+						</tr>
+						<tr>
+							<th class="reference">Garex R. Antoque <br><span class="small">Dean, Holy Cross College</span></th>
+							<th class="reference">xxxx@xxx.com<br><span>(919) 532-5558</span></th>
+						</tr>
+						<tr>
+							<th class="reference">John Paul de Guzman <br><span class="small">IT Consultant, Province of Dvo. Oriental</span></th>
+							<th class="reference">gdshah@waketech.edu<br><span>(919) 532-5558</span></th>
+						</tr>
+					</table>
+					
+				</div>
+			</div>
+		</div>
+</div>
+	</div>
+	
+</main>
+</div>
+</body>
+</html>
